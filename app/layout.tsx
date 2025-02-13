@@ -35,8 +35,8 @@ export default function RootLayout({
                   <Link href="/#why-us" className="text-[13px] text-gray-300 hover:text-white transition-colors">
                     Why Us
                   </Link>
-                  <Link href="/#mission" className="text-[13px] text-gray-300 hover:text-white transition-colors">
-                    Mission
+                  <Link href="/about-us" className="text-[13px] text-gray-300 hover:text-white transition-colors">
+                    About Us
                   </Link>
                   <Link href="/#works" className="text-[13px] text-gray-300 hover:text-white transition-colors">
                     Works

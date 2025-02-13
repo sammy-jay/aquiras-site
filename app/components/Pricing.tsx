@@ -7,6 +7,7 @@ const plans = [
   {
     name: 'Business Essential',
     description: 'Ideal for small to medium businesses',
+    price: '100',
     features: [
       'Basic IT infrastructure setup',
       'Standard security package',
@@ -18,6 +19,7 @@ const plans = [
     name: 'Enterprise Pro',
     description: 'Complete solution for large organizations',
     popular: true,
+    price: '1000',
     features: [
       'Advanced infrastructure management',
       'Enterprise security suite',

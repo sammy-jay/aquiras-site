@@ -5,10 +5,9 @@ import { useState } from 'react'
 import Link from 'next/link'
 
 const navLinks = [
-  { name: 'Why Us', href: '#why-us' },
-  { name: 'Mission', href: '#mission' },
-  { name: 'Works', href: '#works' },
-  { name: 'Services', href: '#services' }
+  { name: 'About Us', href: '/about-us' },
+  { name: 'Services', href: '/#services' },
+  { name: 'Contact', href: '/contact' }
 ]
 
 const pageLinks = [

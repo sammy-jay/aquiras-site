@@ -130,11 +130,6 @@ export default function Home() {
         {/* Benefits Section */}
         <Benefits />
 
-        {/* Mission Section */}
-        <section id="mission">
-          <Mission />
-        </section>
-
         {/* Recent Works Section */}
         <section id="works">
           <RecentWorks />

@@ -5,16 +5,34 @@ import Link from 'next/link'
 
 const benefits = [
   {
-    title: 'Global Partners',
-    description: 'Wide array of suppliers and partners worldwide providing specialized IT products and services.'
+    title: 'Innovative Approach',
+    description: 'Look for works that reflect a unique character and differentiate in a crowded marketplace.',
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3ZM4.5 12C4.5 7.85786 7.85786 4.5 12 4.5C16.1421 4.5 19.5 7.85786 19.5 12C19.5 16.1421 16.1421 19.5 12 19.5C7.85786 19.5 4.5 16.1421 4.5 12Z" fill="white"/>
+        <path d="M12 6.75C9.1005 6.75 6.75 9.1005 6.75 12C6.75 14.8995 9.1005 17.25 12 17.25C14.8995 17.25 17.25 14.8995 17.25 12C17.25 9.1005 14.8995 6.75 12 6.75Z" fill="white"/>
+      </svg>
+    )
   },
   {
-    title: 'Industry Coverage',
-    description: 'Serving Education, Telecommunications, Banking, Insurance, and SME sectors.'
+    title: 'Seamless Experience',
+    description: 'A seamless user experience across all devices, ensuring every interaction connects with the user.',
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 9V5L21 12L14 19V15L17 12L14 9Z" fill="white"/>
+        <path d="M3 12H15M3 12L6 9M3 12L6 15" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    )
   },
   {
-    title: 'Complete Solutions',
-    description: 'End-to-end IT services from infrastructure to software and security solutions.'
+    title: 'Ongoing Partnership',
+    description: 'Find a new partner easily, not just providers, who offer ongoing support even after the project ends.',
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 12.75C13.6569 12.75 15 11.4069 15 9.75C15 8.09315 13.6569 6.75 12 6.75C10.3431 6.75 9 8.09315 9 9.75C9 11.4069 10.3431 12.75 12 12.75Z" fill="white"/>
+        <path d="M19 9.75C19 13.47 12 20.25 12 20.25C12 20.25 5 13.47 5 9.75C5 6.02944 8.13401 3 12 3C15.866 3 19 6.02944 19 9.75Z" stroke="white" strokeWidth="2"/>
+      </svg>
+    )
   }
 ]
 
@@ -45,6 +63,11 @@ export function Benefits() {
 
                 {/* Content */}
                 <div className="relative flex flex-col items-center text-center">
+                  {/* Icon */}
+                  <div className="w-16 h-16 rounded-full bg-[#f97316] flex items-center justify-center mb-6">
+                    {benefit.icon}
+                  </div>
+
                   {/* Title */}
                   <h3 className="text-2xl font-medium mb-4">
                     {benefit.title}

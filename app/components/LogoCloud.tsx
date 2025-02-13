@@ -21,12 +21,16 @@ const partners = [
     logo: 'https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg'
   },
   {
-    name: 'HP',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/2/29/HP_New_Logo_2D.svg'
+    name: 'Oracle',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg'
   },
   {
-    name: 'Canon',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/3/3f/Canon_logo_vector.svg'
+    name: 'SAP',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg'
+  },
+  {
+    name: 'VMware',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Vmware.svg'
   }
 ]
 
@@ -37,30 +41,54 @@ export function LogoCloud() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
-        className="text-center"
+        className="text-center mb-10"
       >
         <p className="text-gray-400 text-sm">Our services are featured on</p>
       </motion.div>
 
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4 }}
-        className="mx-auto max-w-7xl px-6 lg:px-8"
-      >
-        <div className="mx-auto mt-10 grid grid-cols-2 items-center gap-x-8 gap-y-10 sm:grid-cols-5 sm:gap-x-10">
-          {partners.map((partner) => (
-            <Image
-              key={partner.name}
-              src={partner.logo}
-              alt={partner.name}
-              width={100}
-              height={40}
-              className="object-contain opacity-40 hover:opacity-60 transition-opacity duration-300"
-            />
-          ))}
+      <div className="relative overflow-hidden">
+        <div className="absolute pointer-events-none inset-y-0 left-0 w-32 bg-gradient-to-r from-black to-transparent z-10" />
+        <div className="absolute pointer-events-none inset-y-0 right-0 w-32 bg-gradient-to-l from-black to-transparent z-10" />
+        
+        <div className="flex overflow-hidden">
+          <motion.div 
+            className="flex gap-16 px-8"
+            animate={{
+              x: [0, -1935]
+            }}
+            transition={{
+              x: {
+                duration: 30,
+                repeat: Infinity,
+                ease: "linear"
+              }
+            }}
+          >
+            {/* First set of logos */}
+            {partners.map((partner) => (
+              <div key={partner.name} className="relative w-[150px] h-[60px] shrink-0">
+                <Image
+                  src={partner.logo}
+                  alt={partner.name}
+                  fill
+                  className="object-contain opacity-40 hover:opacity-60 transition-opacity duration-300"
+                />
+              </div>
+            ))}
+            {/* Duplicate set for seamless loop */}
+            {partners.map((partner) => (
+              <div key={`${partner.name}-duplicate`} className="relative w-[150px] h-[60px] shrink-0">
+                <Image
+                  src={partner.logo}
+                  alt={partner.name}
+                  fill
+                  className="object-contain opacity-40 hover:opacity-60 transition-opacity duration-300"
+                />
+              </div>
+            ))}
+          </motion.div>
         </div>
-      </motion.div>
+      </div>
     </div>
   )
 } 

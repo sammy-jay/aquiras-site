@@ -4,6 +4,12 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 
+const navLinks = [
+  { name: 'About Us', href: '/about-us' },
+  { name: 'Services', href: '/#services' },
+  { name: 'Contact', href: '/contact' }
+]
+
 export function MobileNav() {
   const [isOpen, setIsOpen] = useState(false)
 
@@ -24,7 +30,7 @@ export function MobileNav() {
             xmlns="http://www.w3.org/2000/svg" 
             fill="none" 
             viewBox="0 0 24 24" 
-            strokeWidth={1.5} 
+            strokeWidth={1.5}   
             stroke="currentColor" 
             className="w-4 h-4"
           >
@@ -57,11 +63,11 @@ export function MobileNav() {
                 Why Us
               </Link>
               <Link 
-                href="/#mission" 
+                href="/about-us" 
                 className="px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-neutral-800/50 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Mission
+                About Us
               </Link>
               <Link 
                 href="/#works" 

@@ -3,7 +3,10 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
-const services = [
+// Add this type near the top of the file
+type ServiceKey = keyof typeof serviceImages;
+
+const services: { title: string; description: string; icon: string; key: ServiceKey }[] = [
   {
     title: 'Enterprise Software Solution Implementation',
     description: 'Complete enterprise software solutions and implementation services for businesses.',
@@ -41,18 +44,6 @@ const services = [
     key: 'network'
   },
   {
-    title: 'IT Procurement Services',
-    description: 'Strategic procurement of IT hardware, software, and equipment.',
-    icon: '🛒',
-    key: 'procurement'
-  },
-  {
-    title: 'IT Security Audits',
-    description: 'Comprehensive security assessments and audit services.',
-    icon: '🔒',
-    key: 'security'
-  },
-  {
     title: 'Database Management',
     description: 'Professional database administration and management services.',
     icon: '💾',
@@ -70,18 +61,6 @@ const services = [
     icon: '🔄',
     key: 'dataRecovery'
   },
-  {
-    title: 'Maintenance of I.T Infrastructure',
-    description: 'Regular maintenance and support for IT infrastructure.',
-    icon: '🔧',
-    key: 'maintenance'
-  },
-  {
-    title: 'Mac Support Services',
-    description: 'Specialized support and services for Apple/Mac environments.',
-    icon: '🍎',
-    key: 'mac'
-  }
 ]
 
 const features = [
@@ -163,9 +142,8 @@ const serviceImages = {
   database: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80',
   webSolutions: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
   dataRecovery: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80',
-  maintenance: 'https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&q=80',
-  mac: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&q=80'
 }
+  
 
 export function Services() {
   return (

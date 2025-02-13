@@ -4,12 +4,11 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 
 const footerLinks = [
-  { name: 'About Aquiras', href: '/about' },
-  { name: 'Why Us', href: '#why-us' },
-  { name: 'Mission', href: '#mission' },
-  { name: 'Works', href: '#works' },
-  { name: 'Services', href: '#services' },
-  { name: 'Contact', href: '#contact' }
+  { name: 'About Us', href: '/about-us' },
+  { name: 'Services', href: '/#services' },
+  { name: 'Contact', href: '/contact' },
+  { name: 'Mission', href: '/about-us#mission' },
+  { name: 'Team', href: '/about-us#team' }
 ]
 
 export function Footer() {
