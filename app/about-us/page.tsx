@@ -1,7 +1,11 @@
-import { Footer } from '../components/Footer'
-import { Mission } from '../components/Mission'
+"use client"
+import { Footer } from '@/app/components/Footer'
+import { Mission } from '@/app/components/Mission'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+
+// Make sure this is a client component since it uses motion
+'use client'
 
 const stats = [
   { value: '15+', label: 'Years Experience' },
