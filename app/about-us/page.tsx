@@ -3,6 +3,7 @@ import { Footer } from '@/app/components/Footer'
 import { Mission } from '@/app/components/Mission'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import { Team } from '../components/Team'
 
 const stats = [
   { value: '15+', label: 'Years Experience' },
@@ -158,6 +159,7 @@ export default function AboutUs() {
                 the training and retraining of our staff.
               </motion.p>
             </div>
+            <Team/>
           </div>
         </section>
 

@@ -48,10 +48,10 @@ export function Mission() {
           <motion.div className="inline-flex items-center justify-center px-4 py-1.5 mb-6 border border-gray-800 rounded-full">
             <span className="text-[12px] text-gray-300">Our Company</span>
           </motion.div>
-          <h2 className="text-4xl md:text-5xl font-medium mb-6">Who We Are</h2>
+          <h2 className="text-4xl md:text-5xl font-medium mb-6 ">Who We Are</h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 max-w-[800px] mx-auto gap-12">
        
 
           {/* Vision */}
