@@ -4,9 +4,6 @@ import { Mission } from '@/app/components/Mission'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
-// Make sure this is a client component since it uses motion
-'use client'
-
 const stats = [
   { value: '15+', label: 'Years Experience' },
   { value: '500+', label: 'Enterprise Clients' },
