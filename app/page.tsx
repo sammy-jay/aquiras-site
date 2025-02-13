@@ -51,7 +51,7 @@ export default function Home() {
               <h1 className="text-5xl md:text-7xl font-bold">
                 <span className="gradient-text">Aquiras Solutions</span>
               </h1>
-              <div className="flex items-center justify-center gap-4 text-5xl md:text-7xl font-bold">
+              <div className="flex items-center justify-center gap-4 text-5xl md:text-7xl font-bold text-wrap">
                 <span>Technology</span>
                 <motion.span
                   animate={{ rotate: [0, 360] }}
