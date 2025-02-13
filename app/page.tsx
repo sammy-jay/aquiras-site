@@ -121,7 +121,7 @@ export default function Home() {
         </section>
 
         {/* Pricing Section */}
-        <section id="pages">
+        <section id="pricing">
           <Pricing />
         </section>
 
