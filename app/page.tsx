@@ -48,21 +48,21 @@ export default function Home() {
               transition={{ delay: 0.2 }}
               className="mt-12 text-center space-y-4"
             >
-              <h1 className="text-3xl md:text-7xl font-bold">
+              <h1 className="text-5xl md:text-7xl font-bold">
                 <span className="gradient-text">Aquiras Solutions</span>
               </h1>
-              <div className="flex items-center justify-center gap-4 text-3xl md:text-7xl font-bold">
+              <div className="flex items-center justify-center gap-4 text-5xl md:text-7xl font-bold">
                 <span>Technology</span>
                 <motion.span
                   animate={{ rotate: [0, 360] }}
                   transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-                  className="inline-block"
+                  className="block md:inline-block"
                 >
                   ✦
                 </motion.span>
                 <span>Solutions.</span>
               </div>
-              <h2 className="text-3xl md:text-7xl font-bold gradient-text">
+              <h2 className="text-5xl md:text-7xl font-bold gradient-text">
                 Enterprise Excellence.
               </h2>
             </motion.div>
@@ -92,30 +92,7 @@ export default function Home() {
               </Link>
             </motion.div>
 
-            {/* Scroll Arrow */}
-            <motion.button
-              onClick={scrollToWorks}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8 }}
-              className="absolute bottom-12 left-1/2 -translate-x-1/2 text-gray-400 hover:text-white transition-colors"
-            >
-              <motion.svg
-                animate={{ y: [0, 8, 0] }}
-                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-                className="w-8 h-8"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
-                />
-              </motion.svg>
-            </motion.button>
+            
           </div>
         </section>
 
