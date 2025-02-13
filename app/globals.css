@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-blue: #60a5fa;
+  --section-bg: #0A0A0A;
+  --card-bg: rgba(23, 23, 23, 0.7);
+}
+
+body {
+  background-color: #000;
+  color: white;
+}
+
+.section-bg {
+  background-color: var(--section-bg);
+}
+
+.card-bg {
+  background-color: var(--card-bg);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Adjust based on your navbar height */
+}
