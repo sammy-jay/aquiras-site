@@ -51,31 +51,8 @@ export function Mission() {
           <h2 className="text-4xl md:text-5xl font-medium mb-6">Who We Are</h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {/* About Us */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="relative"
-          >
-            <div className="mb-8">
-              <Image
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80"
-                alt="Modern office with IT infrastructure"
-                width={400}
-                height={300}
-                className="rounded-2xl"
-              />
-            </div>
-            <h3 className="text-2xl font-medium mb-4">About Us</h3>
-            <p className="text-gray-400 text-lg leading-relaxed">
-              With the fast evolving information age the need for excellent cost effective 
-              information technology solutions and equipment cannot be over emphasized. We are here to 
-              bridge the technological gaps Africa; thus aiding transition to a more technological advanced 
-              Africa.
-            </p>
-          </motion.div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+       
 
           {/* Vision */}
           <motion.div
