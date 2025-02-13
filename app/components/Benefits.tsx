@@ -38,7 +38,7 @@ const benefits = [
 
 export function Benefits() {
   return (
-    <section className="py-24">
+    <section className="py-12">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
@@ -64,7 +64,7 @@ export function Benefits() {
                 {/* Content */}
                 <div className="relative flex flex-col items-center text-center">
                   {/* Icon */}
-                  <div className="w-16 h-16 rounded-full bg-[#f97316] flex items-center justify-center mb-6">
+                  <div className="w-16 h-16 rounded-full bg-[#60a5fa] flex items-center justify-center mb-6">
                     {benefit.icon}
                   </div>
 

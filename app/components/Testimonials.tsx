@@ -7,13 +7,13 @@ import { TestimonialGrid } from './TestimonialGrid'
 const testimonial = {
   company: {
     name: 'Stanbic IBTC Bank',
-    logo: '/images/clients/stanbic.png'
+    logo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=2787&auto=format&fit=crop'
   },
   quote: "Aquiras Solutions has transformed our IT infrastructure with their comprehensive solutions and exceptional support.",
   author: {
     name: 'James Anderson',
     role: 'Chief Technology Officer',
-    image: '/images/testimonials/cto.jpg'
+    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=2787&auto=format&fit=crop'
   },
   stats: [
     {
