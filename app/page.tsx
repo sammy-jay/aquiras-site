@@ -48,10 +48,10 @@ export default function Home() {
               transition={{ delay: 0.2 }}
               className="mt-12 text-center space-y-4"
             >
-              <h1 className="text-5xl md:text-7xl font-bold">
+              <h1 className="text-3xl md:text-7xl font-bold">
                 <span className="gradient-text">Aquiras Solutions</span>
               </h1>
-              <div className="flex items-center justify-center gap-4 text-5xl md:text-7xl font-bold">
+              <div className="flex items-center justify-center gap-4 text-3xl md:text-7xl font-bold">
                 <span>Technology</span>
                 <motion.span
                   animate={{ rotate: [0, 360] }}
@@ -62,7 +62,7 @@ export default function Home() {
                 </motion.span>
                 <span>Solutions.</span>
               </div>
-              <h2 className="text-5xl md:text-7xl font-bold gradient-text">
+              <h2 className="text-3xl md:text-7xl font-bold gradient-text">
                 Enterprise Excellence.
               </h2>
             </motion.div>
