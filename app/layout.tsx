@@ -26,7 +26,7 @@ export default function RootLayout({
                 href="/" 
                 className="text-[#60a5fa] font-bold text-base hover:text-[#60a5fa]/90 transition-colors"
               >
-                Automatix
+                Aquiras
               </Link>
               
               {/* Desktop Menu */}
