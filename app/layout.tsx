@@ -20,9 +20,9 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.className} antialiased`}>
         <div className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 md:px-6">
-          <nav className="w-auto bg-black/50 backdrop-blur-sm rounded-full border border-gray-800/50">
-            <div className="px-4 py-2 md:px-5 md:py-2.5 flex items-center gap-6 md:gap-12">
-              <Link 
+      <nav className="w-full md:w-auto bg-black/50 backdrop-blur-sm rounded-full border border-gray-800/50">
+        <div className="px-4 py-2 md:px-5 md:py-2.5 flex items-center justify-between md:justify-center gap-6 md:gap-12">
+          <Link 
                 href="/" 
                 className="text-[#60a5fa] font-bold text-base hover:text-[#60a5fa]/90 transition-colors"
               >
