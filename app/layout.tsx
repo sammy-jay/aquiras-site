@@ -27,7 +27,7 @@ export default function RootLayout({
                 href="/" 
                 className="text-[#60a5fa] font-bold text-base hover:text-[#60a5fa]/90 transition-colors"
               >
-                <Image src="/Aquiras Solutions transparent back.png" alt="logo" width={100} height={40}/>
+                <Image src="/aquiras-logo-transparent.png" alt="logo" width={100} height={60}/>
               </Link>
               
               {/* Desktop Menu */}
