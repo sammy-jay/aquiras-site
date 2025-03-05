@@ -13,7 +13,7 @@ const footerLinks = [
 
 export function Footer() {
   return (
-    <footer className="relative bg-black py-32">
+    <footer className="relative py-32">
       <div className="absolute inset-0">
         <div 
           className="absolute inset-0 bg-[radial-gradient(#111_1px,transparent_1px)] [background-size:24px_24px] opacity-25"

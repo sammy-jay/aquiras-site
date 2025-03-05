@@ -26,7 +26,7 @@ export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0)
 
   return (
-    <section className="bg-black py-24">
+    <section className="py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Badge */}
         <motion.div

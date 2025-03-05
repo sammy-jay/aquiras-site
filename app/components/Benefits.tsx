@@ -82,22 +82,6 @@ export function Benefits() {
             </motion.div>
           ))}
         </div>
-
-        {/* CTA Button */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.4 }}
-          className="flex justify-center mt-16"
-        >
-          <Link
-            href="/#pricing"
-            className="inline-block px-8 py-4 bg-[#60a5fa] text-white rounded-2xl text-lg font-medium hover:bg-[#60a5fa]/90 transition-colors"
-          >
-            See Pricing
-          </Link>
-        </motion.div>
       </div>
     </section>
   )

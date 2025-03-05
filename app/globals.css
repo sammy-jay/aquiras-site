@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -42,7 +42,7 @@ html {
   /* Adjust size as needed */
   height: 50px;
   /* Adjust size as needed */
-  background: linear-gradient(to right, #FF8C00, black);
+  background: linear-gradient(to right, #60A5FA, black);
   /* Darker orange */
   border-radius: 50%;
 }

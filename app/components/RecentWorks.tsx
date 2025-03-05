@@ -3,30 +3,7 @@
 import { motion } from 'framer-motion'
 import { WorkShowcase } from './WorkShowcase'
 
-const ArrowIcon = () => (
-  <motion.svg
-    width="80"
-    height="120"
-    viewBox="0 0 80 120"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    initial={{ y: 0 }}
-    animate={{ y: [0, 20, 0] }}
-    transition={{
-      duration: 2,
-      repeat: Infinity,
-      ease: "easeInOut"
-    }}
-  >
-    <path
-      d="M37.5 2.5L37.5 95M37.5 95L5 62.5M37.5 95L70 62.5"
-      stroke="#60a5fa"
-      strokeWidth="3"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </motion.svg>
-)
+
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -73,14 +50,6 @@ export function RecentWorks() {
       variants={containerVariants}
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        {/* Centered Arrow */}
-        <motion.div
-          variants={itemVariants}
-          className="flex justify-center mb-24"
-        >
-          <ArrowIcon />
-        </motion.div>
-
         {/* Badge */}
         <motion.div
           variants={itemVariants}

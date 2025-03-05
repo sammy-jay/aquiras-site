@@ -120,16 +120,11 @@ export default function Home() {
           <Services />
         </section>
 
-        {/* Pricing Section */}
-        <section id="pricing">
-          <Pricing />
-        </section>
-
+      
         {/* Testimonials Section */}
         <Testimonials />
 
-        {/* Team Section */}
-        <Team />
+       
 
         {/* FAQ Section */}
         <FAQ />

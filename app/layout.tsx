@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Link from "next/link";
 import { MobileNav } from "./components/MobileNav";
 import "./globals.css";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +27,7 @@ export default function RootLayout({
                 href="/" 
                 className="text-[#60a5fa] font-bold text-base hover:text-[#60a5fa]/90 transition-colors"
               >
-                Aquiras
+                <Image src="/Aquiras Solutions transparent back.png" alt="logo" width={100} height={40}/>
               </Link>
               
               {/* Desktop Menu */}
