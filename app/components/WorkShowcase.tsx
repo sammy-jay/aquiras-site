@@ -6,82 +6,71 @@ import { RiGovernmentLine } from 'react-icons/ri';
 
 const works = [
   {
-    title: "AI Sales Domination",
-    description: "Turn your sales team into a closing machine. We automatically qualify prospects and deliver high-value leads.",
-    icon: "📈",
+    title: "Revolutionize Business Applications",
+    description: "Streamline your entire organization with integrated ERP, CRM, and HRMS solutions. Gain a unified view of your business for smarter decisions.",
+    icon: "🏢",
     details: [
-      "Hyper-personalized sales pitches.",
-      "Predictive deal scoring.",
-      "AI-powered follow-ups (no more missed opportunities).",
-      "AI Voice Agents for lead qualification."
+      "Automated workflows across departments.",
+      "Real-time data visibility for informed decision-making.",
+      "Improved efficiency and reduced operational costs.",
+      "Scalable solutions to grow with your business."
     ]
   },
   {
-    title: "Revolutionize Customer Success",
-    description: "Turn support into a revenue engine. Instant, personalized support boosts satisfaction and reduces churn.",
+    title: "Unlock Scalability with Cloud Solutions",
+    description: "Empower your business with flexible and scalable Cloud Solutions (IaaS, PaaS, SaaS). Reduce costs, increase agility, and accelerate innovation.",
+    icon: "☁️",
+    details: [
+      "Reduced infrastructure management overhead.",
+      "Increased agility and faster time to market.",
+      "Enhanced collaboration and data accessibility.",
+      "Improved security and disaster recovery capabilities."
+    ]
+  },
+  {
+    title: "Fortify Your Defenses with Security & Compliance Tools",
+    description: "Protect your valuable data and maintain compliance with industry regulations. Proactive security measures prevent costly breaches and fines.",
+    icon: "🛡️",
+    details: [
+      "Real-time threat detection and prevention.",
+      "Automated compliance reporting and auditing.",
+      "Enhanced data encryption and access control.",
+      "Proactive vulnerability management."
+    ]
+  },
+  {
+    title: "Boost Collaboration and Productivity",
+    description: "Empower your teams with the right tools for seamless communication, collaboration, and productivity. Increase efficiency and improve team performance.",
     icon: "🤝",
     details: [
-      "Automated onboarding = immediate customer value.",
-      "AI identifies upsell/cross-sell opportunities.",
-      "Turn feedback into actionable improvements.",
-      "Predict churn + prevent it."
+      "Real-time collaboration on documents and projects.",
+      "Streamlined communication channels for efficient teamwork.",
+      "Automated task management and workflow automation.",
+      "Improved employee engagement and satisfaction."
     ]
   },
   {
-    title: "Transform Your HR",
-    description: "Find top talent faster and slash recruiting costs. Automate hiring & free up your HR team.",
-    icon: "👥",
-    details: [
-      "AI-powered resume screening & ranking.",
-      "Seamless interview scheduling.",
-      "Personalized onboarding checklists.",
-      "Analyze engagement to prevent retention risks."
-    ]
-  },
-  {
-    title: "Supercharge Operations",
-    description: "Eliminate bottlenecks and unlock unprecedented efficiency. Automate tasks and gain real-time business visibility.",
-    icon: "⚙️",
-    details: [
-      "Automated project status updates.",
-      "Performance summaries for every team.",
-      "Routine task automation (reporting, backups).",
-      "AI-powered workflow optimization."
-    ]
-  },
-  {
-    title: "Empower Executives",
-    description: "Data-driven insights for confident decisions. Automate data collection and empower executives to focus on growth.",
-    icon: "📅",
-    details: [
-      "Automated daily schedules & reminders.",
-      "Prioritized inboxes (never miss what matters).",
-      "Seamless meeting coordination.",
-      "Real-time performance reports."
-    ]
-  },
-  {
-    title: "Revolutionize Finance",
-    description: "Automate finance and admin tasks. Reduce errors and free your team for strategic priorities.",
-    icon: "💰",
-    details: [
-      "Automated invoice generation & payment reminders.",
-      "Real-time expense, profit, & budget visibility.",
-      "Effortless financial reports.",
-      "Cash flow monitoring + unusual activity alerts."
-    ]
-  },
-  {
-    title: "AI-Powered Marketing Domination",
-    description: "Stop guessing and start dominating. We leverage AI to personalize campaigns and drive explosive growth.",
+    title: "Transform Data into Insights with Analytics & BI",
+    description: "Unlock the power of your data with advanced analytics and business intelligence platforms. Make data-driven decisions and gain a competitive edge.",
     icon: "📊",
     details: [
-      "24/7 audience & competitor research.",
-      "Personalized content creation & scheduling.",
-      "Instant social & email responses.",
-      "Campaign optimization based on real-time data."
+      "Interactive dashboards and visualizations.",
+      "Real-time data analysis and reporting.",
+      "Predictive analytics for forecasting trends.",
+      "Improved decision-making and strategic planning."
     ]
   },
+  {
+    title: "Optimize Your Infrastructure with System Management Software",
+    description: "Gain complete control and visibility over your IT infrastructure. Proactively manage systems, reduce downtime, and optimize performance.",
+    icon: "⚙️",
+    details: [
+      "Automated system monitoring and alerting.",
+      "Remote management and troubleshooting capabilities.",
+      "Proactive performance optimization and tuning.",
+      "Improved system availability and reliability."
+    ]
+  }
 ];
 
 export function WorkShowcase() {

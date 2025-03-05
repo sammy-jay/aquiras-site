@@ -35,8 +35,8 @@ export default function Home() {
               className="flex justify-center"
             >
               <div className="inline-flex items-center gap-2 bg-black/30 px-4 py-2 rounded-full border border-gray-800">
-                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-                <span className="text-sm text-gray-300">Available now, only 3 spots left</span>
+                <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" />
+                <span className="text-sm text-gray-300">Secure your transformation today</span>
               </div>
             </motion.div>
 
@@ -47,22 +47,17 @@ export default function Home() {
               transition={{ delay: 0.2 }}
               className="mt-12 text-center space-y-4"
             >
-              <h1 className="text-5xl md:text-7xl font-bold">
-                <span className="gradient-text">Aquiras Solutions</span>
+              
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold">
+                Your Trusted IT Partner
               </h1>
-              <div className="hidden md:flex items-center justify-center gap-4 text-5xl md:text-7xl font-bold text-wrap">
-                <span>Technology</span>
-                <motion.span
-                  animate={{ rotate: [0, 360] }}
-                  transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-                  className="block md:inline-block"
-                >
-                  ✦
-                </motion.span>
-                <span>Solutions.</span>
-              </div>
-              <h2 className="text-5xl md:text-7xl font-bold gradient-text">
-                Enterprise Excellence.
+              
+              <h1 className="text-3xl md:text-5xl font-bold lg:text-6xl">
+                 for a Smarter,
+              </h1>
+            
+              <h2 className="text-3xl md:text-5xl font-bold gradient-text lg:text-6xl">
+                More Efficient Future.
               </h2>
             </motion.div>
 

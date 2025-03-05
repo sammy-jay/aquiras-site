@@ -40,19 +40,19 @@ export function Footer() {
         {/* Main Content */}
         <div className="text-center">
           {/* Heading */}
+           
           <div className="space-y-4 mb-8">
             <motion.h2 className="text-5xl md:text-6xl lg:text-7xl font-medium leading-tight">
-              Transform Your
+              Ready to Transform 
             </motion.h2>
             <motion.h2 className="text-5xl md:text-6xl lg:text-7xl font-medium leading-tight">
-              IT Infrastructure
+              Your Enterprise?
             </motion.h2>
           </div>
 
           {/* Description */}
           <motion.p className="text-gray-400 text-xl max-w-2xl mx-auto mb-16">
-            Partner with us for comprehensive technology solutions
-            that drive your business forward.
+            Let’s take your business operations to the next level with robust, future-proof enterprise software solutions.
           </motion.p>
 
           {/* CTA Button */}

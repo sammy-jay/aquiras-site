@@ -16,29 +16,29 @@ const phases = [
     },
     {
         title: "Phase 2: Solution Design & Selection ",
-        description: "This isn't about generic solutions; it's about engineering a custom-built AI system that's perfectly tailored to your unique needs. We'll map out a strategic blueprint to turn your business into a lead-generating, revenue-multiplying machine.",
+        description: "Drawing on our expertise and partnerships with leading technology providers, we design and recommend solutions that are perfectly aligned with your business needs and budget.",
         details: [
-            "We'll design a custom AI system architecture based on our findings from the discovery phase.",
-            "You’ll get a visual blueprint detailing every step of the process, from lead capture to customer conversion.",
-            "We’ll present a rock-solid ROI projection, showing you the exact financial impact our AI system will deliver."
+           "Based on the insights gained in Phase 1, we design tailored solutions that address your specific challenges and leverage the latest technologies to drive efficiency and growth.",
+           "We carefully evaluate and select the most appropriate hardware, software, and services from our trusted partners to ensure optimal performance and value.",
+           "We develop a comprehensive implementation plan, outlining timelines, resource requirements, and potential risks to ensure a smooth and successful project execution."
         ],
     },
     {
-        title: "Phase 3: Deploy & Dominate",
-        description: "Now it’s time to unleash the power. We'll build, test, and integrate your custom AI system seamlessly into your existing operations, ensuring a smooth transition and immediate results. This isn't just implementation; it's about domination.",
+        title: "Phase 3: Seamless Implementation & Integration",
+        description: "Our experienced team ensures a seamless and efficient implementation process, integrating new technologies into your existing environment with minimal disruption.",
         details: [
-            "Our expert team will handle the entire development and deployment process, minimizing disruption to your business.",
-            "We'll conduct rigorous testing to ensure flawless performance and maximum ROI.",
-            "You'll receive comprehensive training and ongoing support to ensure you're maximizing the system's potential."
+            "We assign a dedicated project manager to oversee all aspects of the implementation, ensuring timely completion and adherence to budget.",
+            "We seamlessly integrate new technologies with your existing IT systems, ensuring compatibility and optimal performance.",
+            "We conduct rigorous testing and quality assurance to ensure that all solutions function as expected and meet your specific requirements."
         ],
     },
     {
-        title: "Phase 4: Optimize & Scale",
-        description: "We don't just set it and forget it. This is about continuous refinement and relentless pursuit of improvement. We'll constantly analyze performance, identify new opportunities, and scale your AI system to fuel unstoppable growth.",
+        title: "Phase 4: Ongoing Support & Optimization",
+        description: "Our commitment doesn't end with implementation. We provide ongoing support and optimization services to ensure that your IT investments continue to deliver value and drive business success.",
         details: [
-            "We'll provide ongoing monitoring, maintenance, and optimization to ensure your AI system is always performing at its peak.",
-            "We’ll proactively identify new opportunities to leverage AI to drive further growth and efficiency.",
-            "You'll have a dedicated partner committed to maximizing the long-term ROI of your AI investment."
+            "We offer prompt and reliable help desk support to address any technical issues or questions that may arise.",
+            "We provide proactive managed services to monitor, maintain, and optimize your IT infrastructure, ensuring peak performance and security.",
+            "We regularly review your IT environment and identify opportunities for further optimization and innovation, helping you stay ahead of the competition."
         ],
     },
 ];
@@ -83,7 +83,7 @@ export function OurProcess() {
                         transition={{ delay: 0.4 }}
                         className="mt-6 text-lg leading-8 text-gray-400"
                     >
-                        A battle-tested system for transforming your business with AI, guaranteed to deliver results.
+                        A battle-tested system for transforming your business, guaranteed to deliver results.
                     </motion.p>
                 </motion.div>
 

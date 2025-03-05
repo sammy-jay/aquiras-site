@@ -6,7 +6,7 @@ export const WhyUs = () => {
   const [highlightIndex, setHighlightIndex] = useState(0);
   const sectionRef = useRef<HTMLElement>(null);
 
-  const text = "Aquiras Solutions engineers AI systems that transform B2B businesses into revenue-generating machines. We deliver real results, not hype. Gain your unfair advantage today.";
+  const text = "Aquiras Solutions is your dedicated IT partner. With years of experience and strong vendor partnerships, we deliver tailored, cost-effective solutions. Choose us for expertise, reliability, and lasting success.";
   const words = text.split(" ");
   const wordsPerHighlight = 3;
 

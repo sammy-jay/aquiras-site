@@ -32,12 +32,6 @@ const services: { title: string; description: string; icon: string; key: Service
     key: 'network'
   },
   {
-    title: 'Database Management',
-    description: 'We offer expert database management services designed to optimize, secure, and harness the power of your organization\'s data assets.From design and implementation to maintenance and optimization, we ensure your data is readily accessible, protected, and drives insightful decision- making.',
-    icon: '💾',
-    key: 'database'
-  },
-  {
     title: 'Web Solutions',
     description: 'We specialize in web solutions that create engaging, user-friendly, and effective digital experiences. From website design and development to e-commerce platforms and custom web applications, we build online solutions that elevate your brand, reach your target audience, and achieve your business goals.',
     icon: '🌐',
@@ -46,16 +40,9 @@ const services: { title: string; description: string; icon: string; key: Service
 ]
 
 const features = [
+
   {
-    name: 'Data Recovery',
-    icon: (
-      <svg className="w-4 h-4 text-[#60a5fa]" viewBox="0 0 16 16">
-        <path fill="currentColor" d="M2 4h12v8H2z" />
-      </svg>
-    )
-  },
-  {
-    name: 'AI-Driven Solutions',
+    name: 'Database Management',
     icon: (
       <svg className="w-4 h-4 text-[#60a5fa]" viewBox="0 0 16 16">
         <path fill="currentColor" d="M8 1l7 4v6l-7 4-7-4V5z" />
@@ -86,6 +73,14 @@ const features = [
       </svg>
     )
   },
+    {
+    name: 'Data Recovery',
+    icon: (
+      <svg className="w-4 h-4 text-[#60a5fa]" viewBox="0 0 16 16">
+        <path fill="currentColor" d="M2 4h12v8H2z" />
+      </svg>
+    )
+  },
   {
     name: 'Analytics',
     icon: (
@@ -111,7 +106,6 @@ const serviceImages = {
   web: 'https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&q=80',
   network: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80',
   security: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80',
-  database: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80',
   webSolutions: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
 }
 

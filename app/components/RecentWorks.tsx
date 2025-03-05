@@ -113,7 +113,7 @@ export function RecentWorks() {
             transition={{ delay: 0.4 }}
             className="mt-6 text-lg leading-8 text-gray-400"
           >
-            A systematic approach to transforming your business operations with AI
+            A systematic approach to transforming your business operations
           </motion.p>
         </motion.div>
 
