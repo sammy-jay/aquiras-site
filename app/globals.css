@@ -12,7 +12,7 @@
 body {
   background-color: #000;
   color: white;
-  background-image: radial-gradient(circle, rgba(0, 140, 255, 0.2) 1px, transparent 1px);
+  background-image: radial-gradient(circle, rgba(0, 140, 255, 0.5) 1px, transparent 1px);
   background-size: 20px 20px;
   font-family: "Archivo", serif;
   font-optical-sizing: auto;
@@ -47,3 +47,14 @@ html {
   border-radius: 50%;
 }
 
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}

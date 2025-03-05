@@ -8,12 +8,11 @@ import { Mission } from './components/Mission'
 import { RecentWorks } from './components/RecentWorks'
 import { Stats } from './components/Stats'
 import { Services } from './components/Services'
-import { Pricing } from './components/Pricing'
 import { Testimonials } from './components/Testimonials'
-import { Team } from './components/Team'
 import { FAQ } from './components/FAQ'
 import { Footer } from './components/Footer'
 import Link from 'next/link'
+import { OurProcess } from './components/OurProcess'
 
 export default function Home() {
   const scrollToWorks = () => {
@@ -104,23 +103,24 @@ export default function Home() {
           <WhyUs />
         </section>
 
-        {/* Benefits Section */}
-        <Benefits />
+        {/* Services Section */}
+        <section id="services">
+          <Services />
+        </section>
+
+        <section id="works">
+          <OurProcess />
+        </section>
+      
 
         {/* Recent Works Section */}
-        <section id="works">
+        <section>
           <RecentWorks />
         </section>
 
         {/* Stats Section */}
         <Stats />
 
-        {/* Services Section */}
-        <section id="services">
-          <Services />
-        </section>
-
-      
         {/* Testimonials Section */}
         <Testimonials />
 

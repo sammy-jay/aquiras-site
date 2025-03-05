@@ -1,157 +1,196 @@
 'use client'
 
-import { motion, AnimatePresence } from 'framer-motion'
-import { useState } from 'react'
-import Image from 'next/image'
+import { motion } from 'framer-motion';
+import { useEffect, useRef } from 'react';
+import { FaShoppingCart, FaHospital, FaIndustry, FaCode, FaUniversity, FaBriefcase, FaSearchDollar, FaUsers, FaInternetExplorer } from 'react-icons/fa'; // Import necessary icons
 
-type Work = {
-  id: string
-  title: string
-  description?: string
-  stats?: string
-  image: string
-  color: string
-}
-
-const works: Work[] = [
+const works = [
   {
-    id: 'grapho',
-    title: 'TeamSync AI',
-    description: "Enhancing team collaboration through AI-powered workflow optimization and communication tools.",
-    image: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2940&auto=format&fit=crop',
-    color: '#60a5fa'
+    title: "AI Sales Domination",
+    description: "Turn your sales team into a closing machine. We automatically qualify prospects and deliver high-value leads.",
+    icon: "📈",
+    details: [
+      "Hyper-personalized sales pitches.",
+      "Predictive deal scoring.",
+      "AI-powered follow-ups (no more missed opportunities).",
+      "AI Voice Agents for lead qualification."
+    ]
   },
   {
-    id: 'vectra',
-    title: 'IndustrialTech',
-    description: "Modernizing manufacturing operations with smart automation and predictive maintenance solutions.",
-    stats: '34% increase in online sales.',
-    image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2940&auto=format&fit=crop',
-    color: '#f59e0b'
+    title: "Revolutionize Customer Success",
+    description: "Turn support into a revenue engine. Instant, personalized support boosts satisfaction and reduces churn.",
+    icon: "🤝",
+    details: [
+      "Automated onboarding = immediate customer value.",
+      "AI identifies upsell/cross-sell opportunities.",
+      "Turn feedback into actionable improvements.",
+      "Predict churn + prevent it."
+    ]
   },
   {
-    id: 'signum',
-    title: 'WorkspaceOS',
-    description: "Enterprise workspace management platform that optimizes office efficiency and employee experience.",
-    stats: '47% increase in new customers.',
-    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2940&auto=format&fit=crop',
-    color: '#ec4899'
-  }
-]
+    title: "Transform Your HR",
+    description: "Find top talent faster and slash recruiting costs. Automate hiring & free up your HR team.",
+    icon: "👥",
+    details: [
+      "AI-powered resume screening & ranking.",
+      "Seamless interview scheduling.",
+      "Personalized onboarding checklists.",
+      "Analyze engagement to prevent retention risks."
+    ]
+  },
+  {
+    title: "Supercharge Operations",
+    description: "Eliminate bottlenecks and unlock unprecedented efficiency. Automate tasks and gain real-time business visibility.",
+    icon: "⚙️",
+    details: [
+      "Automated project status updates.",
+      "Performance summaries for every team.",
+      "Routine task automation (reporting, backups).",
+      "AI-powered workflow optimization."
+    ]
+  },
+  {
+    title: "Empower Executives",
+    description: "Data-driven insights for confident decisions. Automate data collection and empower executives to focus on growth.",
+    icon: "📅",
+    details: [
+      "Automated daily schedules & reminders.",
+      "Prioritized inboxes (never miss what matters).",
+      "Seamless meeting coordination.",
+      "Real-time performance reports."
+    ]
+  },
+  {
+    title: "Revolutionize Finance",
+    description: "Automate finance and admin tasks. Reduce errors and free your team for strategic priorities.",
+    icon: "💰",
+    details: [
+      "Automated invoice generation & payment reminders.",
+      "Real-time expense, profit, & budget visibility.",
+      "Effortless financial reports.",
+      "Cash flow monitoring + unusual activity alerts."
+    ]
+  },
+  {
+    title: "AI-Powered Marketing Domination",
+    description: "Stop guessing and start dominating. We leverage AI to personalize campaigns and drive explosive growth.",
+    icon: "📊",
+    details: [
+      "24/7 audience & competitor research.",
+      "Personalized content creation & scheduling.",
+      "Instant social & email responses.",
+      "Campaign optimization based on real-time data."
+    ]
+  },
+];
 
 export function WorkShowcase() {
-  const [activeWork, setActiveWork] = useState<Work>(works[0])
-
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 mt-24">
-      {/* Left side - Work list */}
-      <div className="relative">
-        <div 
-          className="absolute left-0 top-0 bottom-0 w-[1px] bg-[#60a5fa]/10"
-          style={{
-            background: `${activeWork.color}10`
-          }}
-        />
-        <div className="space-y-14 relative">
-          {works.map((work) => (
-            <motion.div
-              key={work.id}
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              className="pl-8"
-            >
-              <motion.button
-                onClick={() => setActiveWork(work)}
-                className={`text-left w-full group ${
-                  activeWork.id === work.id ? 'opacity-100' : 'opacity-40'
-                }`}
-                whileHover={{ opacity: 1 }}
-              >
-                <motion.h3 
-                  className="text-2xl md:text-3xl font-medium mb-3 transition-colors duration-300"
-                  style={{
-                    color: activeWork.id === work.id ? work.color : 'white'
-                  }}
-                  layout
-                >
-                  {work.title}
-                </motion.h3>
-                {work.description && (
-                  <motion.p 
-                    className="text-gray-400 text-base leading-relaxed max-w-2xl"
-                    layout
-                  >
-                    {work.description}
-                  </motion.p>
-                )}
-                {work.stats && (
-                  <motion.p 
-                    className="text-gray-400 text-base"
-                    layout
-                  >
-                    {work.stats}
-                  </motion.p>
-                )}
-                
-                {activeWork.id === work.id && (
-                  <motion.div
-                    className="absolute left-0 top-[16px] w-[2px] h-8"
-                    style={{ background: work.color }}
-                    layoutId="activeIndicator"
-                  />
-                )}
-              </motion.button>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-
-      {/* Right side - Image showcase */}
-      <div className="relative">
-        <div className="rounded-[32px] overflow-hidden bg-neutral-900/50 backdrop-blur-sm border border-gray-800/50">
-          <div className="p-6">
-            <AnimatePresence mode="wait">
+    <section className="py-16">
+      <div className="mx-auto max-w-7xl px-2 lg:px-8">
+        <div className="flex overflow-auto hide-scrollbar scroll-smooth">
+          <motion.div
+            className="flex gap-4 md:gap-8 px-2"
+          >
+            {/* First set of logos */}
+            {works.map((work, index) => (
               <motion.div
-                key={activeWork.id}
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.95 }}
-                transition={{ duration: 0.4, ease: "easeInOut" }}
-                className="relative aspect-video rounded-2xl overflow-hidden"
+                key={index}
+                className="bg-[#0a0a0a] cursor-pointer py-6 px-3 md:p-6 rounded-lg flex flex-col w-[300px] md:min-w-[330px]" // Increased width
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
               >
-                <Image
-                  src={activeWork.image}
-                  alt={activeWork.title}
-                  fill
-                  className="object-cover"
-                  priority
-                />
-                {activeWork.id === 'grapho' && (
-                  <div className="absolute inset-0 flex items-end justify-end p-6">
-                    <div className="flex items-end gap-4">
-                      <div className="w-4 h-16 bg-gray-600/50 rounded-sm" />
-                      <motion.div 
-                        initial={{ height: 0 }}
-                        animate={{ height: 64 }}
-                        transition={{ duration: 0.5, delay: 0.2 }}
-                        className="w-4 bg-[#60a5fa] rounded-sm"
-                      />
-                    </div>
-                    <motion.div
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ delay: 0.4 }}
-                      className="absolute bottom-4 right-4 bg-[#60a5fa] text-white px-3 py-1 rounded text-sm"
-                    >
-                      80%
-                    </motion.div>
-                  </div>
-                )}
+                <div className="flex items-center mb-4">
+                  <div className="text-3xl mr-2">{work.icon}</div>
+                  <h3 className="text-xl font-bold text-white">{work.title}</h3>
+                </div>
+                <p className="text-gray-400">{work.description}</p>
+                <ul className="mt-2 list-disc list-inside text-gray-400 pl-3">
+                  {work.details.map((detail, i) => (
+                    <li key={i}>{detail}</li>
+                  ))}
+                </ul>
               </motion.div>
-            </AnimatePresence>
+            ))}
+          </motion.div>
+        </div>
+
+        {/* Industries */}
+        <div className="mt-24 flex justify-center gap-4 md:gap-8 flex-row flex-wrap">
+          <div className="flex items-center text-gray-300 flex-col">
+            <div className='p-2 rounded-lg border-gray-900 border-[1px] cursor-pointer hover:scale-105 transition duration-300'>
+              <div className='bg-[#0a0a0a] rounded-lg p-4 border-gray-900 border-[1px]'>
+                <FaShoppingCart className="text-3xl" />
+              </div>
+            </div>
+            <span className="mt-2 ml-2 text-sm">E-commerce</span>
+          </div>
+
+          <div className="flex items-center text-gray-300 flex-col">
+            <div className='p-2 rounded-lg border-gray-900 border-[1px] cursor-pointer hover:scale-105 transition duration-300'>
+              <div className='bg-[#0a0a0a] rounded-lg p-4 border-gray-900 border-[1px]'>
+                <FaIndustry className="text-3xl" />
+              </div>
+            </div>
+            <span className="mt-2 ml-2 text-sm">Manufacturing</span>
+          </div>
+
+          <div className="flex items-center text-gray-300 flex-col">
+            <div className='p-2 rounded-lg border-gray-900 border-[1px] cursor-pointer hover:scale-105 transition duration-300'>
+              <div className='bg-[#0a0a0a] rounded-lg p-4 border-gray-900 border-[1px]'>
+                <FaCode className="text-3xl" />
+              </div>
+            </div>
+            <span className="mt-2 ml-2 text-sm">Tech/Software</span>
+          </div>
+
+          <div className="flex items-center text-gray-300 flex-col">
+            <div className='p-2 rounded-lg border-gray-900 border-[1px] cursor-pointer hover:scale-105 transition duration-300'>
+              <div className='bg-[#0a0a0a] rounded-lg p-4 border-gray-900 border-[1px]'>
+                <FaUniversity className="text-3xl" />
+              </div>
+            </div>
+            <span className="mt-2 ml-2 text-sm">Education</span>
+          </div>
+
+          <div className="flex items-center text-gray-300 flex-col">
+            <div className='p-2 rounded-lg border-gray-900 border-[1px] cursor-pointer hover:scale-105 transition duration-300'>
+              <div className='bg-[#0a0a0a] rounded-lg p-4 border-gray-900 border-[1px]'>
+                <FaInternetExplorer className="text-3xl" />
+              </div>
+            </div>
+            <span className="mt-2 ml-2 text-sm">Internet</span>
+          </div>
+
+          <div className="flex items-center text-gray-300 flex-col">
+            <div className='p-2 rounded-lg border-gray-900 border-[1px] cursor-pointer hover:scale-105 transition duration-300'>
+              <div className='bg-[#0a0a0a] rounded-lg p-4 border-gray-900 border-[1px]'>
+                <FaSearchDollar className="text-3xl" />
+              </div>
+            </div>
+            <span className="mt-2 ml-2 text-sm">Finance</span>
+          </div>
+
+          <div className="flex items-center text-gray-300 flex-col">
+            <div className='p-2 rounded-lg border-gray-900 border-[1px] cursor-pointer hover:scale-105 transition duration-300'>
+              <div className='bg-[#0a0a0a] rounded-lg p-4 border-gray-900 border-[1px]'>
+                <FaHospital className="text-3xl" />
+              </div>
+            </div>
+            <span className="mt-2 ml-2 text-sm">Healthcare</span>
+          </div>
+
+          <div className="flex items-center text-gray-300 flex-col">
+            <div className='p-2 rounded-lg border-gray-900 border-[1px] cursor-pointer hover:scale-105 transition duration-300'>
+              <div className='bg-[#0a0a0a] rounded-lg p-4 border-gray-900 border-[1px]'>
+                <FaUsers className="text-3xl" />
+              </div>
+            </div>
+            <span className="mt-2 ml-2 text-sm">Recruiting</span>
           </div>
         </div>
       </div>
-    </div>
-  )
-} 
+    </section>
+  );
+}
