@@ -1,8 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion';
-import { useEffect, useRef } from 'react';
-import { FaShoppingCart, FaHospital, FaIndustry, FaCode, FaUniversity, FaBriefcase, FaSearchDollar, FaUsers, FaInternetExplorer } from 'react-icons/fa'; // Import necessary icons
+import { FaHospital, FaIndustry, FaCode, FaUniversity, FaSearchDollar } from 'react-icons/fa'; // Import necessary icons
+import { RiGovernmentLine } from 'react-icons/ri';
 
 const works = [
   {
@@ -121,12 +121,12 @@ export function WorkShowcase() {
           <div className="flex items-center text-gray-300 flex-col">
             <div className='p-2 rounded-lg border-gray-900 border-[1px] cursor-pointer hover:scale-105 transition duration-300'>
               <div className='bg-[#0a0a0a] rounded-lg p-4 border-gray-900 border-[1px]'>
-                <FaShoppingCart className="text-3xl" />
+                <FaUniversity className="text-3xl" />
               </div>
             </div>
-            <span className="mt-2 ml-2 text-sm">E-commerce</span>
+            <span className="mt-2 ml-2 text-sm">Education</span>
           </div>
-
+          
           <div className="flex items-center text-gray-300 flex-col">
             <div className='p-2 rounded-lg border-gray-900 border-[1px] cursor-pointer hover:scale-105 transition duration-300'>
               <div className='bg-[#0a0a0a] rounded-lg p-4 border-gray-900 border-[1px]'>
@@ -148,19 +148,10 @@ export function WorkShowcase() {
           <div className="flex items-center text-gray-300 flex-col">
             <div className='p-2 rounded-lg border-gray-900 border-[1px] cursor-pointer hover:scale-105 transition duration-300'>
               <div className='bg-[#0a0a0a] rounded-lg p-4 border-gray-900 border-[1px]'>
-                <FaUniversity className="text-3xl" />
+                <RiGovernmentLine className="text-3xl" />
               </div>
             </div>
-            <span className="mt-2 ml-2 text-sm">Education</span>
-          </div>
-
-          <div className="flex items-center text-gray-300 flex-col">
-            <div className='p-2 rounded-lg border-gray-900 border-[1px] cursor-pointer hover:scale-105 transition duration-300'>
-              <div className='bg-[#0a0a0a] rounded-lg p-4 border-gray-900 border-[1px]'>
-                <FaInternetExplorer className="text-3xl" />
-              </div>
-            </div>
-            <span className="mt-2 ml-2 text-sm">Internet</span>
+            <span className="mt-2 ml-2 text-sm">Government</span>
           </div>
 
           <div className="flex items-center text-gray-300 flex-col">
@@ -179,15 +170,6 @@ export function WorkShowcase() {
               </div>
             </div>
             <span className="mt-2 ml-2 text-sm">Healthcare</span>
-          </div>
-
-          <div className="flex items-center text-gray-300 flex-col">
-            <div className='p-2 rounded-lg border-gray-900 border-[1px] cursor-pointer hover:scale-105 transition duration-300'>
-              <div className='bg-[#0a0a0a] rounded-lg p-4 border-gray-900 border-[1px]'>
-                <FaUsers className="text-3xl" />
-              </div>
-            </div>
-            <span className="mt-2 ml-2 text-sm">Recruiting</span>
           </div>
         </div>
       </div>

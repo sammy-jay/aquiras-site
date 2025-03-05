@@ -62,12 +62,12 @@ export function MobileNav() {
               >
                 Why Us
               </Link>
-              <Link 
-                href="/about-us" 
+              <Link
+                href="/#services"
                 className="px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-neutral-800/50 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                About Us
+                Services
               </Link>
               <Link 
                 href="/#works" 
@@ -76,14 +76,13 @@ export function MobileNav() {
               >
                 Works
               </Link>
-              <Link 
-                href="/#services" 
+              <Link
+                href="/about-us"
                 className="px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-neutral-800/50 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Services
+                About Us
               </Link>
-             
               <Link 
                 href="/contact"
                 className="block px-4 py-2 text-sm text-gray-300 hover:text-white transition-colors"

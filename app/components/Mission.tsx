@@ -30,7 +30,7 @@ const wordVariants = {
 
 export function Mission() {
   return (
-    <section className="py-24 bg-black relative overflow-hidden">
+    <section className="py-24 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0">
         <div 

@@ -50,8 +50,8 @@ export const WhyUs = () => {
           transition={{ delay: 0.2 }}
           className="inline-flex items-center justify-center px-4 py-1.5 mb-8 border border-gray-800 rounded-full items-center"
         >
-          <span className="w-2 h-2 bg-orange-500 rounded-full animate-pulse mr-2" />
-          <span className="text-[13px] text-gray-300">Dominate With AI</span>
+          <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse mr-2" />
+          <span className="text-[13px] text-gray-300">Why Us</span>
         </motion.div>
         <div className="text-center mx-auto relative overflow-hidden">
           <p className="mt-4 leading-10 text-3xl md:text-4xl lg:text-5xl text-gray-300 whitespace-pre-line relative">

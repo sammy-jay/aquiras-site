@@ -127,42 +127,6 @@ export default function AboutUs() {
         {/* Mission Section */}
         <Mission />
 
-        {/* Our Team Section */}
-        <section className="py-24 bg-black">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <motion.div 
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                className="inline-flex items-center justify-center px-4 py-1.5 mb-6 border border-gray-800 rounded-full"
-              >
-                <span className="text-[12px] text-gray-300">Our Team</span>
-              </motion.div>
-              <motion.h2 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="text-4xl md:text-5xl font-medium mb-6"
-              >
-                Expert Team of Professionals
-              </motion.h2>
-              <motion.p 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="text-gray-400 text-lg max-w-2xl mx-auto"
-              >
-                Our team of experienced professionals whose enthusiasm and expertise 
-                continues to captivate our clients is one worthy of note. With the continuous 
-                development of our staff being paramount to us, we are continuously involved in 
-                the training and retraining of our staff.
-              </motion.p>
-            </div>
-            <Team/>
-          </div>
-        </section>
-
         {/* Our Values */}
         <section className="py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">

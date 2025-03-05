@@ -6,16 +6,16 @@ import { FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Import icons
 
 const phases = [
     {
-        title: "Phase 1: Diagnose & Discover",
-        description: "Before we write a single line of code, we become intimately familiar with your business. We'll dissect your current processes, identify profit leaks, and pinpoint the exact areas where AI can create exponential growth.",
+        title: "Phase 1: Consultation & Needs Assessment",
+        description: "Before we implement any solutions, we take the time to fully understand your business operations, challenges, and objectives.",
         details: [
-            "We’ll perform a full-scale audit of your current systems, workflows, and revenue generation processes.",
-            "We’ll interview key stakeholders to uncover hidden bottlenecks and untapped opportunities.",
-            "You'll receive a crystal-clear, data-backed assessment of your biggest areas for improvement and how AI can solve them."
+            "We conduct comprehensive consultations with key stakeholders to understand your current IT infrastructure, workflows, and business goals.",
+            "We perform a thorough audit of your existing IT systems, identifying areas for improvement, potential risks, and opportunities for optimization.",
+            "You'll receive a detailed report summarizing our findings, outlining our recommendations, and providing a clear roadmap for achieving your desired outcomes."
         ],
     },
     {
-        title: "Phase 2: Architect Your AI Powerhouse",
+        title: "Phase 2: Solution Design & Selection ",
         description: "This isn't about generic solutions; it's about engineering a custom-built AI system that's perfectly tailored to your unique needs. We'll map out a strategic blueprint to turn your business into a lead-generating, revenue-multiplying machine.",
         details: [
             "We'll design a custom AI system architecture based on our findings from the discovery phase.",

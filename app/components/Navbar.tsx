@@ -1,8 +1,9 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import { useState } from 'react'
 import Link from 'next/link'
+import { MobileNav } from './MobileNav'
+import Image from 'next/image'
 
 const navLinks = [
   { name: 'About Us', href: '/about-us' },
@@ -29,99 +30,45 @@ export function Navbar() {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50">
-      <nav className="mx-auto max-w-7xl px-6 lg:px-8 py-4">
-        <div className="flex items-center justify-between">
-          {/* Logo */}
-          <Link 
-            href="/" 
+    <div className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 md:px-6">
+      <nav className="w-full md:w-auto bg-black/50 backdrop-blur-sm rounded-full border border-gray-800/50">
+        <div className="px-4 py-2 md:px-5 md:py-2.5 flex items-center justify-between md:justify-center gap-6 md:gap-12">
+          <Link
+            href="/"
             className="text-[#60a5fa] font-bold text-base hover:text-[#60a5fa]/90 transition-colors"
           >
-            Aquiras Solutions
+            <Image src="/aquiras-logo-transparent.png" alt="logo" width={100} height={60} />
           </Link>
 
-          {/* Navigation Links */}
-          <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                onClick={(e) => scrollToSection(e, link.href)}
-                className="text-gray-400 hover:text-[#60a5fa] transition-colors"
-              >
-                {link.name}
-              </a>
-            ))}
-
-            {/* Pages Dropdown */}
-            <div className="relative">
-              <button
-                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                className="flex items-center gap-2 text-gray-400 hover:text-[#60a5fa] transition-colors"
-              >
-                Pages
-                <svg
-                  className={`w-4 h-4 transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`}
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </button>
-
-              {/* Dropdown Menu */}
-              {isDropdownOpen && (
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 10 }}
-                  className="absolute top-full right-0 mt-2 py-2 w-48 bg-[#111] border border-gray-800 rounded-xl shadow-xl"
-                >
-                  {pageLinks.map((link) => (
-                    <a
-                      key={link.name}
-                      href={link.href}
-                      className="block px-4 py-2 text-gray-400 hover:text-[#60a5fa] hover:bg-gray-800/50 transition-colors"
-                      onClick={() => setIsDropdownOpen(false)}
-                    >
-                      {link.name}
-                    </a>
-                  ))}
-                </motion.div>
-              )}
+          {/* Desktop Menu */}
+          <div className="hidden md:flex items-center gap-6">
+            <div className="flex items-center gap-6">
+              <Link href="/#why-us" className="text-[13px] text-gray-300 hover:text-white transition-colors">
+                Why Us
+              </Link>
+              <Link href="/#services" className="text-[13px] text-gray-300 hover:text-white transition-colors">
+                Services
+              </Link>
+              <Link href="/#works" className="text-[13px] text-gray-300 hover:text-white transition-colors">
+                Works
+              </Link>
+              <Link href="/about-us" className="text-[13px] text-gray-300 hover:text-white transition-colors">
+                About Us
+              </Link>
             </div>
           </div>
 
-          {/* CTA Button */}
-          <motion.a
+          <Link
             href="/contact"
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#111] text-white hover:bg-[#222] transition-colors border border-gray-800"
+            className="hidden md:block bg-neutral-800 px-4 py-1.5 rounded-full text-[13px] text-white hover:bg-neutral-700 transition-all hover:scale-[1.02] active:scale-[0.98]"
           >
             Let's Talk
-            <svg 
-              className="w-4 h-4" 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              stroke="currentColor"
-            >
-              <path 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
-                strokeWidth={2} 
-                d="M14 5l7 7m0 0l-7 7m7-7H3" 
-              />
-            </svg>
-          </motion.a>
+          </Link>
+
+          {/* Mobile Navigation */}
+          <MobileNav />
         </div>
       </nav>
-    </header>
+    </div>
   )
 } 

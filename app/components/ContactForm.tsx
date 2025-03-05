@@ -40,7 +40,7 @@ export function ContactForm() {
   }
 
   return (
-    <section className="relative bg-black pt-32 pb-24">
+    <section className="relative pt-32 pb-24">
       {/* Background Pattern */}
       <div className="absolute inset-0">
         <div 

@@ -91,7 +91,7 @@ export function Testimonials() {
             className="flex justify-center"
           >
             <div className="inline-flex items-center justify-center px-4 py-1.5 mb-6 border border-gray-800 rounded-full">
-              <span className="w-2 h-2 bg-orange-500 rounded-full animate-pulse mr-2" />
+              <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse mr-2" />
               <span className="text-[12px] text-gray-300">Real Results, Real Companies</span>
             </div>
           </motion.div>

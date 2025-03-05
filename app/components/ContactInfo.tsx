@@ -43,7 +43,7 @@ const contactInfo = [
 
 export function ContactInfo() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-16">
       {contactInfo.map((info, index) => (
         <motion.div
           key={info.title}
