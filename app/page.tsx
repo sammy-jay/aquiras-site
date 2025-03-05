@@ -45,18 +45,18 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="mt-12 text-center space-y-4"
+              className="mt-12 text-center space-y-2"
             >
               
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
                 Your Trusted IT Partner
               </h1>
               
-              <h1 className="text-3xl md:text-5xl font-bold lg:text-6xl">
+              <h1 className="text-4xl md:text-5xl font-bold lg:text-6xl">
                  for a Smarter,
               </h1>
             
-              <h2 className="text-3xl md:text-5xl font-bold gradient-text lg:text-6xl">
+              <h2 className="text-4xl md:text-5xl font-bold gradient-text lg:text-6xl">
                 More Efficient Future.
               </h2>
             </motion.div>
