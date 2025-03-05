@@ -37,7 +37,7 @@ export function Navbar() {
             href="/"
             className="text-[#60a5fa] font-bold text-base hover:text-[#60a5fa]/90 transition-colors"
           >
-            <Image src="/aquiras-logo-transparent.png" alt="logo" width={100} height={60} />
+            <Image src="/aquiras-logo-transparent.png" alt="logo" width={120} height={80} />
           </Link>
 
           {/* Desktop Menu */}
