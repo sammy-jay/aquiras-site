@@ -165,7 +165,7 @@ export function Services() {
               <h3 className="text-xl font-medium mb-2">
                 {service.title}
               </h3>
-              <p className="text-gray-400 text-sm leading-relaxed">
+              <p className="text-gray-400 text-base leading-relaxed">
                 {service.description}
               </p>
             </motion.div>
