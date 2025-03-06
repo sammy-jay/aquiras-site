@@ -27,6 +27,17 @@ const works = [
       "Improved security and disaster recovery capabilities."
     ]
   },
+    {
+    title: "Elevate Efficiency with Proprietary Solutions",
+    description: "Unlock unparalleled optimization with Aquiras Solutions' custom-built proprietary software. Designed to tackle your most complex challenges.",
+    icon: "💡",
+    details: [
+      "Solutions tailored to your unique business needs and workflows.",
+      "Seamless integration with your existing IT infrastructure.",
+      "Improved data security and compliance.",
+      "Dedicated expert support for continuous optimization."
+    ]
+  },
   {
     title: "Fortify Your Defenses with Security & Compliance Tools",
     description: "Protect your valuable data and maintain compliance with industry regulations. Proactive security measures prevent costly breaches and fines.",
