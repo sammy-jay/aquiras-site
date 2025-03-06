@@ -11,8 +11,8 @@ const contactInfo = [
       </svg>
     ),
     details: [
-      '5899 Alexys Highway Suite',
-      '678, NR, Nevada, USA'
+      '11 Kola Adeyeye Street',
+      'Off cmd Road, Ikosi'
     ]
   },
   {
@@ -23,8 +23,7 @@ const contactInfo = [
       </svg>
     ),
     details: [
-      '+1 234 567 890',
-      '+1 234 567 890'
+      '+234 706 5311 065',
     ]
   },
   {
