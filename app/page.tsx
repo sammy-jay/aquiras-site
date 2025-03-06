@@ -118,7 +118,7 @@ export default function Home() {
         <Stats />
 
         {/* Testimonials Section */}
-        {/* <TestimonialCloud /> */}
+        <TestimonialCloud />
 
        
 

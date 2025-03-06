@@ -5,32 +5,32 @@ import Image from 'next/image'
 
 const partners = [
   {
-    name: 'FHI360',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg'
+    name: 'img-1',
+    logo: '/testimonial-cloud/img-1.png'
   },
   {
-    name: 'IBM',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg'
+    name: 'img-2',
+    logo: '/testimonial-cloud/img-2.png'
   },
   {
-    name: 'Dell',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/1/18/Dell_logo_2016.svg'
+    name: 'img-3',
+    logo: '/testimonial-cloud/img-3.png'
   },
   {
-    name: 'Cisco',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg'
+    name: 'img-4',
+    logo: '/testimonial-cloud/img-4.png'
   },
   {
-    name: 'Oracle',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg'
+    name: 'img-5',
+    logo: '/testimonial-cloud/img-5.png'
   },
   {
-    name: 'SAP',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg'
+    name: 'img-6',
+    logo: '/testimonial-cloud/img-6.png'
   },
   {
-    name: 'VMware',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Vmware.svg'
+    name: 'img-7',
+    logo: '/testimonial-cloud/img-7.png'
   }
 ]
 
