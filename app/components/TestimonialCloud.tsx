@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const partners = [
   {
-    name: 'Microsoft',
+    name: 'FHI360',
     logo: 'https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg'
   },
   {

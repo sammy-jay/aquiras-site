@@ -104,7 +104,7 @@ const serviceImages = {
   network: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80',
   security: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80',
   webSolutions: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
-  databaseManagement: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
+  databaseManagement: 'https://images.unsplash.com/photo-1564457461758-8ff96e439e83?q=80&w=1332&auto=format&fit=crop',
 }
 
 
