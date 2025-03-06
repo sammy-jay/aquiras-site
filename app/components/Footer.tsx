@@ -7,8 +7,7 @@ const footerLinks = [
   { name: 'About Us', href: '/about-us' },
   { name: 'Services', href: '/#services' },
   { name: 'Contact', href: '/contact' },
-  { name: 'Mission', href: '/about-us#mission' },
-  { name: 'Team', href: '/about-us#team' }
+  { name: 'Mission', href: '/about-us/#mission' },
 ]
 
 export function Footer() {

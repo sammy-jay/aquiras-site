@@ -150,8 +150,7 @@ export function ContactForm() {
               </motion.div>
 
               {/* Service and Budget Row */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <motion.div
+              <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 }}
@@ -173,30 +172,6 @@ export function ContactForm() {
                     ))}
                   </select>
                 </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.5 }}
-                >
-                  <label className="block text-xl mb-3">
-                    Project Budget <span className="text-[#60a5fa]">*</span>
-                  </label>
-                  <select
-                    required
-                    className="w-full bg-[#111] border border-gray-800 rounded-2xl px-6 py-4 text-lg focus:outline-none focus:border-[#60a5fa] transition-colors appearance-none"
-                    value={formData.budget}
-                    onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-                  >
-                    <option value="">Select Your Range</option>
-                    {budgetRanges.map((range) => (
-                      <option key={range} value={range}>
-                        {range}
-                      </option>
-                    ))}
-                  </select>
-                </motion.div>
-              </div>
 
               {/* Project Details */}
               <motion.div

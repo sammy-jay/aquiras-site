@@ -34,7 +34,7 @@ const partners = [
   }
 ]
 
-export function LogoCloud() {
+export function TestimonialCloud() {
   return (
     <div className="py-24 sm:py-32">
       <motion.div
@@ -43,7 +43,7 @@ export function LogoCloud() {
         transition={{ delay: 0.2 }}
         className="text-center mb-10"
       >
-        <p className="text-gray-400 text-sm">OEMs we've patnered with</p>
+        <p className="text-gray-400 text-sm">Companies we've worked with</p>
       </motion.div>
 
       <div className="relative overflow-hidden">

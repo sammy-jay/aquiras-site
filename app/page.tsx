@@ -13,6 +13,7 @@ import { FAQ } from './components/FAQ'
 import { Footer } from './components/Footer'
 import Link from 'next/link'
 import { OurProcess } from './components/OurProcess'
+import { TestimonialCloud } from './components/TestimonialCloud'
 
 export default function Home() {
   const scrollToWorks = () => {
@@ -117,7 +118,7 @@ export default function Home() {
         <Stats />
 
         {/* Testimonials Section */}
-        <Testimonials />
+        <TestimonialCloud />
 
        
 

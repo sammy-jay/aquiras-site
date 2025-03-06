@@ -35,8 +35,8 @@ const contactInfo = [
       </svg>
     ),
     details: [
-      'support@aquiras.com',
-      'info@aquiras.com'
+      'support@aquirassolutions.com',
+      'info@aquirassolutions.com'
     ]
   }
 ]
