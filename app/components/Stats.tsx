@@ -8,8 +8,8 @@ const stats = [
     label: 'Enterprise Clients'
   },
   {
-    value: '2+',
-    label: 'Years Experience'
+    value: '8+',
+    label: 'Months Experience'
   },
   {
     value: '24/7',
