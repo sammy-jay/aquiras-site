@@ -9,7 +9,7 @@ const stats = [
   },
   {
     value: '8+',
-    label: 'Months Experience'
+    label: 'Years Experience'
   },
   {
     value: '24/7',
