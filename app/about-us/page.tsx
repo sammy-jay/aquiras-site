@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 import { Team } from '../components/Team'
 
 const stats = [
-  { value: '2+', label: 'Years Experience' },
+  { value: '8+', label: 'Months Experience' },
   { value: '35+', label: 'Enterprise Clients' },
   { value: '100+', label: 'Expert Staff' },
   { value: '24/7', label: 'Technical Support' }
