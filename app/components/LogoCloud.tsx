@@ -18,7 +18,7 @@ const partners = [
   },
   {
     name: 'HP',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/HP_logo_2025.svg/120px-HP_logo_2025.svg.png'
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/0/05/HP_logo_2025.svg'
   },
   {
     name: 'Cisco',
